@@ -1,89 +1,6 @@
-
-.social-list{
-vertical-align:middle;
-list-style:none;
-animation-duration: 2s;
-animation-name:  flipInX;
+.top-search-w {
+margin-right: 35px;
 }
-
-.social-list img{
-display:table-cell;
-height:auto;
-padding:15px;
-width:60px;
-}
-
-}
-.social-list{
-display:table-cell;
-height:auto;
-padding:0;
-}
-
-.social-list li{
-display:block;
-border:none;
-padding:0;
-margin:0;
-text-transform:uppercase;
-}
-
-.social-list li a{
-color:#fff;
-text-decoration:none;
-}
-
-.social-list li li{
-display:inline-block;
-border:none;
-padding:0 0 0 15px;
-margin:5px -4px 5px 15px;
-border-left:1px solid #868686;
-}
-
-@keyframes flipInX {
-  from {
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  40% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1;
-  }
-
-  80% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-  }
-
-  to {
-    transform: perspective(400px);
-  }
-}
-
-img.zoomEffect {
-    -moz-transition: all 0.5s ease-in-out 0s;
-    -webkit-transition: all 0.5s ease-in-out 0s;
-    -o-transition: all 0.5s ease-in-out 0s;
-    -ms-transition: all 0.5s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s;
-    opacity: 0.7;
-}
-img.zoomEffect:hover {
-    -moz-transform: rotate(5deg) scale(1.10);
-    -webkit-transform: rotate(5deg) scale(1.10);
-    -o-transform: rotate(5deg) scale(1.10);
-    -ms-transform: rotate(5deg) scale(1.10);
-    transform: rotate(5deg) scale(1.10);
-    opacity: 1;
-}
-
 
 
 
@@ -177,9 +94,9 @@ font-weight: 300;
 box-sizing: border-box
 }
 .upcreative {
+	position :relative;
 font: "Proxima Nova Bold"!important;
 font-style: Small;
-padding-top:25%;
 text-align:center;
 font-size:70px !important;
 color:white;
@@ -188,9 +105,11 @@ color:white;
 font: "Proxima Nova Bold"!important;
 }
 .wecraft {
+position :relative;
 text-align:center;
 font-size:40px !important;
 color:white;
+
 }
 .wecraft h5{
 font: "Proxima Nova Thin"!important;
@@ -281,10 +200,7 @@ padding:80px 0
 .section-pad-s{
 padding:30px 0
 }
-#sheader{
-color:#fff;background-color:#04b3e5;
-line-height:1;padding:12px 0 3px
-}
+
 
 #logo-home{
 float:left;
@@ -379,6 +295,90 @@ letter-spacing:1px;
 line-height:2
 }
 
+.social-list{
+vertical-align:middle;
+list-style:none;
+animation-duration: 2s;
+animation-name:  flipInX;
+}
+
+.social-list img{
+display:table-cell;
+height:auto;
+padding:15px;
+width:60px;
+}
+
+}
+.social-list{
+display:table-cell;
+height:auto;
+padding:0;
+}
+
+.social-list li{
+display:block;
+border:none;
+padding:0;
+margin:0;
+text-transform:uppercase;
+}
+
+.social-list li a{
+color:#fff;
+text-decoration:none;
+}
+
+.social-list li li{
+display:inline-block;
+border:none;
+padding:0 0 0 15px;
+margin:5px -4px 5px 15px;
+border-left:1px solid #868686;
+}
+
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+img.zoomEffect {
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+    opacity: 0.7;
+}
+img.zoomEffect:hover {
+    -moz-transform: rotate(5deg) scale(1.10);
+    -webkit-transform: rotate(5deg) scale(1.10);
+    -o-transform: rotate(5deg) scale(1.10);
+    -ms-transform: rotate(5deg) scale(1.10);
+    transform: rotate(5deg) scale(1.10);
+    opacity: 1;
+}
 #menumask{
 position:fixed;
 display:none;
@@ -481,7 +481,8 @@ text-transform:none
 
 
 #navicon{
-float:right;cursor:pointer
+float:right;
+cursor:pointer
 }
 
 #logo{
@@ -672,7 +673,8 @@ margin:38px 5px 8px;
 transform:rotate(0);
 -webkit-transition:.5s ease-in-out;
 -moz-transition:.5s ease-in-out;-o-transition:.5s ease-in-out;
-transition:.5s ease-in-out
+transition:.5s ease-in-out;
+right:29px;
 }
 
 #navicon span{
@@ -817,7 +819,12 @@ user-select:none;
 -o-background-size:cover;
 background-size:cover
 }
-
+.upcreative {
+ padding-top:80vh; /* poussé de la moitié de hauteur de viewport */
+transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+font-size:50px ! important;
+text-align:center;
+}
 /*------------------------------------style-end-------------*/
 
 /*-----------------@media screen-start---------------------------*/
@@ -825,7 +832,6 @@ background-size:cover
 /*-----------------<200-400>---------------------------*/
 @media screen and (max-width:365px) {
 .upcreative {
-padding-top:200px;
 font-size:40px ! important;
 text-align:center;
 
@@ -861,7 +867,41 @@ font-size:40px;
 /*-----------------<400-500>---------------------------*/
 @media screen and (min-width:400px) and (max-width:500px) {
 .upcreative {
-padding-top:45%;
+font-size:60px ! important;
+text-align:center;
+
+}
+.wecraft{
+padding-top:10px;
+text-align:center;
+font-size:50% ! important;
+
+}
+
+.menu-list{
+display:table-cell;
+height:50px;
+padding:20px;
+padding-left:50px;
+vertical-align:middle!important;
+}
+.menu-list,.menu-search{
+vertical-align:middle!important;
+list-style:none;
+font-family:"Proxima Nova Thin";
+letter-spacing:15px;
+overflow:hidden;
+}
+
+.menu-list li,.menu-list li li{
+letter-spacing:1px;
+line-height:2
+}
+}
+
+@media screen and (min-width:550px) and (max-width:600px) {
+.upcreative {
+
 font-size:60px ! important;
 text-align:center;
 
@@ -896,7 +936,7 @@ line-height:2
 /*-----------------<600-700>---------------------------*/
 @media screen and (min-width:750px) and (max-width:770px){
 .upcreative {
-padding-top:60%;
+
 font-size:50px ! important;
 text-align:center;
 }
@@ -938,9 +978,9 @@ background-image:url(../img/fldroit.png)
 }	
 }
 /*-----------------<1000>---------------------------*/
-@media screen and (min-width:1000px) and (max-width:1050px){
+@media screen and (min-width:990px) and (max-width:1050px){
 .upcreative {
-padding-top:60%;
+
 font-size:50px ! important;
 text-align:center;
 }
@@ -984,7 +1024,7 @@ background-image:url(../img/fldroit.png)
 /*-----------------<1000-1300>---------------------------*/
 @media screen and (min-width:1200px) and (max-width:1290px){
 .upcreative {
-padding-top:22%;
+
 font-size:50px ! important;
 text-align:center;
 }
@@ -1027,7 +1067,7 @@ background-image:url(../img/fldroit.png)
 /*-----------------<1300-1500>---------------------------*/
 @media screen and (min-width:1300px) and (max-width:1500px){
 .upcreative {
-padding-top:25%;
+
 font-size:50px ! important;
 text-align:center;
 }
@@ -1079,7 +1119,7 @@ background-image:url(../img/fldroit.png)
 /*-----------------<1600-1700>---------------------------*/
 @media screen and (min-width:1600px) and (max-width:1700px){
 .upcreative {
-padding-top:30%;
+
 font-size:50px ! important;
 text-align:center;
 }
