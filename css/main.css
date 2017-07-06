@@ -1,3 +1,92 @@
+
+.social-list{
+vertical-align:middle;
+list-style:none;
+animation-duration: 2s;
+animation-name:  flipInX;
+}
+
+.social-list img{
+display:table-cell;
+height:auto;
+padding:15px;
+width:60px;
+}
+
+}
+.social-list{
+display:table-cell;
+height:auto;
+padding:0;
+}
+
+.social-list li{
+display:block;
+border:none;
+padding:0;
+margin:0;
+text-transform:uppercase;
+}
+
+.social-list li a{
+color:#fff;
+text-decoration:none;
+}
+
+.social-list li li{
+display:inline-block;
+border:none;
+padding:0 0 0 15px;
+margin:5px -4px 5px 15px;
+border-left:1px solid #868686;
+}
+
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+img.zoomEffect {
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+    opacity: 0.7;
+}
+img.zoomEffect:hover {
+    -moz-transform: rotate(5deg) scale(1.10);
+    -webkit-transform: rotate(5deg) scale(1.10);
+    -o-transform: rotate(5deg) scale(1.10);
+    -ms-transform: rotate(5deg) scale(1.10);
+    transform: rotate(5deg) scale(1.10);
+    opacity: 1;
+}
+
+
+
+
 @font-face {
 font-family: "proxima-nova", sans-serif;
 font-weight: 700;
@@ -90,7 +179,7 @@ box-sizing: border-box
 .upcreative {
 font: "Proxima Nova Bold"!important;
 font-style: Small;
-padding-top:30%;
+padding-top:25%;
 text-align:center;
 font-size:70px !important;
 color:white;
@@ -151,15 +240,6 @@ bottom:16px
 .hero,.mainbar_sub{
 position:relative
 }
-.img-mask-vl:before{
-background-color:rgba(0,0,0,.2)
-}
-.img-mask-l:before{
-background-color:rgba(0,0,0,.5)
-}
-.img-mask-d:before{
-background-color:rgba(0,0,0,.7)
-}
 
 .mainbar_sub,.mainwrap{
 padding-left:80px;
@@ -216,6 +296,8 @@ background-image:url(../img/logowhite.png)
 ;background-size:contain;cursor:pointer
 }
 .backg-upcreative{
+background-position:center;
+background-size:auto;
 background-image: url(../img/fd-upcreative.png);
 height: 931px;
 width: 1950px;
@@ -465,9 +547,6 @@ text-decoration:none;
 transition:all .4s;
 cursor:pointer
 }
-
-
-
 #move-bottom,#move-left,#move-right,#move-top{
 display:none
 }
@@ -492,7 +571,7 @@ transition:all .2s;
 .move-bar{
 //visibility:hidden;
 z-index:1003;
-background:rgba(0,0,0,.7);
+background:rgba(0,0,0,.9);
 color:#fff;
 
 }
@@ -571,17 +650,15 @@ bottom:0;
 background-image:url(../img/flbas.png)
 }
 #activate-left{
-left:-91px;
+left:-5px;
 background-image:url(../img/flgauche.png);
 }
 
 #activate-right{
-right:-90px;
+right:-5px;
 background-image:url(../img/fldroit.png)
 }
-.move-top{
-opacity:0.5;
-}
+
 #navicon{
 //display:none;
 width:36px;
@@ -759,13 +836,6 @@ text-align:center;
 font-size:50% ! important;
 
 }
-.backg-upcreative{
-position:absolute;
-background-image: url(../img/fd-upcreative.png);
-height: 931px;
-width: 1950px;
-top: 0; 
-left: -1000px;"
 }
 .menu-list{
 display:table-cell;
@@ -802,14 +872,7 @@ text-align:center;
 font-size:50% ! important;
 
 }
-.backg-upcreative{
-position:absolute;
-background-image: url(../img/fd-upcreative.png);
-height: 931px;
-width: 1950px;
-top: 0; 
-left: -1000px;"
-}
+
 .menu-list{
 display:table-cell;
 height:50px;
