@@ -1,0 +1,21 @@
+.Details {
+    background: #2e2f38;
+    height: 314px;
+    margin-top: 30px;
+  }
+  .Details-Trustylabs {
+    background-repeat: no-repeat;
+    background-image: url('../img/detail-trustylabs.png');
+  }
+
+
+  .details p {
+    font-family:"proxima-nova",sans-serif;
+  }
+
+  .wrapper, .wrapper-l, .wrapper-s {
+      position: relative;
+      width: 100%;
+      /* max-width: 1280px; */
+      margin: auto;
+    }
