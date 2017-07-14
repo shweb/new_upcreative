@@ -33,6 +33,14 @@ summary {
     display: block
 }
 
+a{
+	color:#000 ! important;
+}
+a:hover{
+	color:#000 ! important;
+}
+
+
 audio,
 canvas,
 progress,
@@ -271,7 +279,8 @@ th {
     }
     img {
         max-width: 100%!important
-    }
+ 
+	}
     h2,
     h3,
     p {
