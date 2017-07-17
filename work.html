@@ -74,7 +74,7 @@
                             <li><a href="about.html">About Us</a></li>
                             <li><a href="service.html">Service</a></li>
                             <li><a href="work.html">Work</a></li>
-                            <li><a href="index.html">Enquire</a></li>
+                            <li><a href="index.html" data-toggle="modal" data-target="#myModal">Enquire</a></li>
                         </ul>
                     </div>
                 </div>
@@ -92,24 +92,13 @@
                     </div>
                 </div>
                 <div class="col-xs-push-0 col-md-push-1 col-sm-push-0 col-md-6">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis </p>
+                    <p class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="grey-bg">
-        <div class="container text-center">
-            <div class="row align-middle col-md-12 text-center">
-                <div class="button-group filters-button-group">
-                    <button class="button-default is-checked" data-filter="*">SEE ALL</button>
-                    <button class="button-default" data-filter=".web">WEB DESIGN</button>
-                    <button class="button-default" data-filter=".mobile">MOBILE</button>
-                    <button class="button-default" data-filter=".wechat">WE CHAT DEVELLOPMENT</button>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     <div class="wrapper">
         <div class="grid">
             <div class="projects Trustylabs web" data-category="web">
@@ -148,48 +137,47 @@
         </div>
     </div>
 
-    <!-- enquire popup start -->
-    <div class="container">
-        <div class="modal fade hidden-xs" id="myModal" role="dialog">
-            <div class="modal-dialog">
-                <div class="popup">
-                    <div class="centerpage">
-                        <h1><strong>CONTACT UP CREATIVE</strong></h1>
-                        <p><strong>+261 034 17 579 20 </strong></p>
-                        <div class="placeholder">
-                            <!-- Contact Form -->
-                            <form class="formulaire">
-                                <div class="row margin-bottom-20">
-                                    <div class="col-md-10 col-xs-10">
-                                        <input class="control" type="text" placeholder="Name">
-                                        <input class="control" type="text" placeholder="Email*">
-                                        <input class="control" type="text" placeholder="Phone">
-                                        <textarea class="control-text" placeholder="Comments"></textarea>
-                                        <p>
-                                            <button type="submit" class="boutonsubmit">submit</button>
-                                        </p>
-                                    </div>
+     <!-- enquire popup start -->
+            <div class="container">
+                <div class="modal fade hidden-xs" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="popup">
+                            <div class="centerpopup">
+                                <h1>CONTACT US</h1>
+                                <p class="num">0086 15821835428</p>
+                                <div class="placeholder">
+                                    <!-- Contact Form -->
+                                    <form class="formulaire">
+                                        <div class="row margin-bottom-20">
+                                            <div class="col-md-10 col-xs-10">
+                                               <input class="control input-name" type="text"   placeholder="Name :">
+                                               <input class="control input-mail" type="text" placeholder="Email :">
+                                               <input class="control input-phone" type="text" placeholder="Phone :">
+                                               <textarea class="control-text input-message" placeholder="Your message :"></textarea>
+                                               <p>
+                                                    <button type="submit" class="boutonsubmit">Submit</button>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
-                            </form>
-                        </div>
-
-                        <div class="containers">
-                            <div class="social">
-                                <a href="#"><img src="./img/fb.png" alt="facebook"></a>
-                                <a href="#"><img src="./img/goo.png" alt="google"></a>
-                                <a href="#"><img src="./img/mail.png" alt="gmail"></a>
-                                <a href="#"><img src="./img/in.png" alt="inquare"></a>
-                                <a href="#"><img src="./img/tw.png" alt="tweeter"></a>
+								
+							<div class="social">
+									<ul>
+										 <a href="#"><li><img src="./img/fb.png" alt="facebook"></li></a>
+										 <a href="#"><li><img src="./img/goo.png" alt="google"></li></a>
+										 <a href="#"><li><img src="./img/in.png" alt="inquare"></li></a>
+										 <a href="#"><li><img src="./img/tw.png" alt="tweeter"></li></a>
+										
+									</ul>
+							</div>		
+								<a class="close wow fadeInDown hidden-xs" data-dismiss="modal">&nbsp;</a>
                             </div>
                         </div>
-                        <a class="close wow fadeInDown hidden-xs" data-dismiss="modal">&times;</a>
-                        <a class="langue wow fadeInDown hidden-xs" href="#">中文</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- enquire popup end -->
+	<!-- enquire popup end -->
 
     <!-- footer start -->
     <footer>
@@ -224,7 +212,7 @@
                             <a href="work.html"><h5><strong>WORK</strong></h5></a>
                         </div>
                         <div class="col-md-3 wow fadeInRight ">
-                            <a href="#"><h5><strong>ENQUIRE</strong></h5></a>
+                            <a href="#" data-toggle="modal" data-target="#myModal"><h5><strong>ENQUIRE</strong></h5></a>
                         </div>
                     </div>
                 </div>
@@ -237,60 +225,6 @@
 		  </div>
     </footer>
     <!-- footer end -->
-    <script>
-        $(document).ready(function() {
-
-            // init Isotope
-            var iso = new Isotope('.grid', {
-                itemSelector: '.projects',
-                layoutMode: 'fitRows'
-            });
-
-            // filter functions
-            var filterFns = {
-                // show if number is greater than 50
-                numberGreaterThan50: function(itemElem) {
-                    var number = itemElem.querySelector('.number').textContent;
-                    return parseInt(number, 10) > 50;
-                }
-            };
-
-            // bind filter button click
-            var filtersElem = document.querySelector('.filters-button-group');
-            filtersElem.addEventListener('click', function(event) {
-                // only work with buttons
-                if (!matchesSelector(event.target, 'button')) {
-                    return;
-                }
-                var filterValue = event.target.getAttribute('data-filter');
-                // use matching filter function
-                filterValue = filterFns[filterValue] || filterValue;
-                iso.arrange({
-                    filter: filterValue
-                });
-            });
-
-            // change is-checked class on buttons
-            var buttonGroups = document.querySelectorAll('.button-group');
-            for (var i = 0, len = buttonGroups.length; i < len; i++) {
-                var buttonGroup = buttonGroups[i];
-                radioButtonGroup(buttonGroup);
-            }
-
-            function radioButtonGroup(buttonGroup) {
-                buttonGroup.addEventListener('click', function(event) {
-                    // only work with buttons
-                    if (!matchesSelector(event.target, 'button')) {
-                        return;
-                    }
-                    buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
-                    event.target.classList.add('is-checked');
-                });
-            }
-        });
-    </script>
-
- 
     <!--about-enquiered-end-->
 </body>
 
